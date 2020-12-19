@@ -42,3 +42,12 @@ let tableauOnze = [tableauDeux.map(item =>{
     return item + item;
 })];
 console.log("item + item => " + tableauOnze);
+
+let tableauDouze = tableauDeux.filter(item => item.length > (2 + 2));
+console.log("item.length > (2 + 2) => " + tableauDouze);
+
+let tableauTreize = tableauDeux.filter(item => item.length % 2);
+console.log("item.length % 2 => " + tableauTreize);
+
+let tableauQuatorze = tableauDeux.filter(item => (item.length - 3) > 10);
+console.log("(item.length - 3) > 10 => " + tableauQuatorze);
